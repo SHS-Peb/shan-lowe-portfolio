@@ -29,7 +29,7 @@ export default function BubbleGrid() {
           whileHover={{ scale: 1.05 }}
           className="w-48 h-48 rounded-full bg-white/70 backdrop-blur-md shadow-xl flex items-center justify-center cursor-pointer"
         >
-          Technological
+          Technological Endevours
         </motion.div>
 
         <AnimatePresence>

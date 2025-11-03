@@ -1,15 +1,53 @@
-export default function Navbar() {
-  return (
-    <nav className="w-full py-6 px-10 flex justify-between items-center text-ink">
-      <div className="font-bold text-xl">
-        Shan
-      </div>
+import { NavLink } from "react-router-dom";
 
-      <div className="flex items-center gap-8 opacity-80">
-        <a href="/" className="hover:opacity-100 transition">Home</a>
-        <a href="/projects" className="hover:opacity-100 transition">Projects</a>
-        <a href="/about" className="hover:opacity-100 transition">About</a>
-      </div>
+export default function Navbar() {
+  const base =
+    "px-6 py-2 rounded-full border-2 border-white shadow-sm transition-all duration-200 hover:shadow-md backdrop-blur-md";
+
+  return (
+    <nav className="w-full py-6 px-10 flex justify-center gap-8 text-ink font-medium">
+      <NavLink
+        to="/"
+        className={`${base} bg-[var(--clr-home)] hover:brightness-110`}
+      >
+        Home
+      </NavLink>
+
+      <NavLink
+        to="/projects"
+        className={`${base} bg-[var(--clr-tech)] hover:brightness-110`}
+      >
+        Tech & Code
+      </NavLink>
+
+      <NavLink
+        to="/advocacy"
+        className={`${base} bg-[var(--clr-advocacy)] hover:brightness-110`}
+      >
+        Advocacy
+      </NavLink>
+
+      <NavLink
+        to="/creative"
+        className={`${base} bg-[var(--clr-creative)] hover:brightness-110`}
+      >
+        Creative Work
+      </NavLink>
+
+      <NavLink
+        to="/blog"
+        className={`${base} bg-[var(--clr-blog)] hover:brightness-110`}
+      >
+        Blog
+      </NavLink>
+
+      <NavLink
+        to="/contact"
+        className={`${base} bg-[var(--clr-contact)] hover:brightness-110`}
+      >
+        Contact Me
+      </NavLink>
     </nav>
   );
 }
+

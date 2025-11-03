@@ -36,6 +36,12 @@ body::before {
 #root {
   position: relative;
   z-index: 2;
+  --clr-home: #ffeefd;
+  --clr-tech: #d7e8ff;
+  --clr-advocacy: #ffd6e8;
+  --clr-creative: #e7d6ff;
+  --clr-blog: #d6efff;
+  --clr-contact: #d9f9e0;
 }
 
 
