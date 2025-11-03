@@ -4,9 +4,22 @@
   color-scheme: light;
 }
 
+html, body {
+  height: 100%;
+}
+
 /* Pastel background */
 body {
+  background: linear-gradient(
+      135deg,
+      #ffd6e8 0%,
+      #e1e8ff 50%,
+      #d7fff8 100%
+    );
+  min-height: 100vh;
   background-attachment: fixed;
+  position: relative;
+  z-index: 0;
 }
 
 body::before {
@@ -17,4 +30,12 @@ body::before {
   background-size: 3px 3px;
   pointer-events: none;
   mix-blend-mode: overlay;
+  z-index: 1;
 }
+
+#root {
+  position: relative;
+  z-index: 2;
+}
+
+

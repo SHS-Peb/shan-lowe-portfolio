@@ -1,9 +1,8 @@
-function Footer() {
+export default function Footer() {
   return (
-    <footer className="p-4 text-center text-sm opacity-60">
-      © 2025 Shannon
+    <footer className="w-full text-center py-10 text-sm opacity-50 text-ink">
+      © {new Date().getFullYear()} Shannon Lowe
     </footer>
   );
 }
 
-export default Footer;
