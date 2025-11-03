@@ -12,9 +12,10 @@ html, body {
 body {
   background: linear-gradient(
       135deg,
-      #ffd6e8 0%,
-      #e1e8ff 50%,
-      #d7fff8 100%
+      #e1c0e0fa 8%,
+      #91c1ffcb 20%,
+      #e2caf5 60%,
+      #b6e5d5 100%
     );
   min-height: 100vh;
   background-attachment: fixed;
