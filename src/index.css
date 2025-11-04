@@ -1,11 +1,37 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Amoresa';
+  src: url('./assets/fonts/Amoresa.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Perandory-Semi-Condensed';
+  src: url('./assets/fonts/Perandory-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
   color-scheme: light;
 }
 
 html, body {
   height: 100%;
+  font-family: 'Perandory-Semi-Condensed';
+}
+
+.custom-font {
+  font-family: 'Perandory-Semi-Condensed';
+}
+
+
+h1 {
+  font-family: 'Amoresa';
+  font-weight: lighter;
 }
 
 /* Pastel background */
