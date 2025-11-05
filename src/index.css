@@ -14,10 +14,6 @@
   font-style: normal;
 }
 
-body {
-  padding-top: 4rem;
-}
-
 :root {
   color-scheme: light;
 }
@@ -35,6 +31,7 @@ html, body {
 h1 {
   font-family: 'Amoresa';
   font-weight: lighter;
+  padding-top: 4rem;
 }
 
 /* Pastel background */
