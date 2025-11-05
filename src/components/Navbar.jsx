@@ -10,7 +10,7 @@ export default function Navbar() {
   const [creativeOpen, setCreativeOpen] = useState(false);
 
   return (
-    <nav className="w-full py-6 px-10 flex justify-center gap-8 text-ink font-medium relative z-50">
+    <nav className="sticky top-0 z-50 w-full py-6 px-10 flex justify-center gap-8 text-ink font-medium relative z-50">
 
       {/* Home */}
       <NavLink

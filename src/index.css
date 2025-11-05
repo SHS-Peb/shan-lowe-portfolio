@@ -2,18 +2,21 @@
 
 @font-face {
   font-family: 'Amoresa';
-  src: url('./assets/fonts/Amoresa.otf') format('truetype');
+  src: url('./assets/fonts/Amoresa.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Perandory-Semi-Condensed';
+  font-family: 'Perandory-Regular';
   src: url('./assets/fonts/Perandory-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
+body {
+  padding-top: 4rem;
+}
 
 :root {
   color-scheme: light;
@@ -21,13 +24,13 @@
 
 html, body {
   height: 100%;
-  font-family: 'Perandory-Semi-Condensed';
+  font-family: 'Perandory-Regular';
+  
 }
 
 .custom-font {
-  font-family: 'Perandory-Semi-Condensed';
+  font-family: 'Perandory-Regular';
 }
-
 
 h1 {
   font-family: 'Amoresa';
@@ -71,4 +74,6 @@ body::before {
   --clr-contact: #d9f9e0;
 }
 
-
+span:first-letter {
+  font-family: 'Amoresa' !important;
+}
