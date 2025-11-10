@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home/Home";
-
+import CodeDeveloper from "./pages/CodeDeveloper";
 import Advocacy from "./pages/Advocacy";
 import Projects from "./pages/Projects";
 import Spotlight from "./pages/Spotlight";
@@ -18,6 +18,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/code-developer" element={<CodeDeveloper />} />
         <Route path="/advocacy" element={<Advocacy />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/spotlight" element={<Spotlight />} />

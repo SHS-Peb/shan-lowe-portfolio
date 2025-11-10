@@ -20,41 +20,42 @@ export default function Navbar() {
         Home
       </NavLink>
 
-      {/* Tech + dropdown */}
+      {/* Code Developer + dropdown */}
       <div
         onMouseEnter={() => setTechOpen(true)}
         onMouseLeave={() => setTechOpen(false)}
         className="relative"
       >
-        <div className={`${base} bg-[var(--clr-tech)] hover:brightness-110`}>
-          Code Developer
-        </div>
+          <Link to="/code-developer" className={`${base} bg-[var(--clr-tech)] hover:brightness-110 block`}>
+            Code Developer
+            </Link>
 
-        <AnimatePresence>
-          {techOpen && (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9, y: -6 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.9, y: -6 }}
-              className="absolute top-full left-1/2 -translate-x-1/2 mt-3 flex flex-col gap-2"
-            >
-              <Link
-                to="/projects"
-                className={`${base} bg-[var(--clr-tech)] hover:brightness-110`}
-              >
-                Projects
-              </Link>
+  <AnimatePresence>
+    {techOpen && (
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9, y: -6 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.9, y: -6 }}
+        className="absolute top-full left-1/2 -translate-x-1/2 mt-3 flex flex-col gap-2"
+      >
+        {/* Projects and Spotlight go to anchors */}
+        <Link
+          to="/code-developer#projects"
+          className={`${base} bg-[var(--clr-tech)] hover:brightness-110`}
+        >
+          Projects
+        </Link>
 
-              <Link
-                to="/spotlight"
-                className={`${base} bg-[var(--clr-tech)] hover:brightness-110`}
-              >
-                Spotlight
-              </Link>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
+        <Link
+          to="/code-developer#spotlight"
+          className={`${base} bg-[var(--clr-tech)] hover:brightness-110`}
+        >
+          Spotlight
+        </Link>
+      </motion.div>
+    )}
+  </AnimatePresence>
+</div>
 
       {/* Advocacy */}
       <NavLink
