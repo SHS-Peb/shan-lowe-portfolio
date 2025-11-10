@@ -1,4 +1,6 @@
+/** @type {import('tailwindcss').Config} */
 export default {
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -8,6 +10,11 @@ export default {
         pastelGreen: '#D9F2E6',
         ink: '#1f2937',
       },
+      fontFamily: {
+        perandory: ['Perandory-Semi-Condensed', 'sans-serif'],
+        amoresa: ['Amoresa', 'sans-serif'],
+      },
     },
   },
+  plugins: [],
 };

@@ -13,10 +13,10 @@ export default function BubbleGrid() {
       <Link to="/advocacy">
         <motion.div
           whileHover={{ scale: 1.1 }}
-          className="w-48 h-48 rounded-full bg-[#ffdef5]/70 text-[#ff84d9] backdrop-blur-md shadow-xl flex items-center justify-center cursor-pointer"
+          className="w-64 h-64 rounded-full bg-[#ffdef5]/70 text-[#ff84d9] text-xl lg:text-4xl backdrop-blur-md shadow-xl flex items-center justify-center cursor-pointer"
         >
           <span className="font-perandory first-letter:!font-amoresa first-letter:text-3xl">
-  Advocacy
+  A dvocacy
 </span>
 
         </motion.div>
@@ -30,7 +30,7 @@ export default function BubbleGrid() {
       >
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="w-48 h-48 rounded-full bg-[#f2f4ff]/70 text-[#558cdd] backdrop-blur-md shadow-xl flex items-center justify-center cursor-pointer text-center"
+          className="w-64 h-64 rounded-full bg-[#f2f4ff]/70 text-[#558cdd]  text-xl lg:text-4xl backdrop-blur-md shadow-xl flex items-center justify-center cursor-pointer text-center"
         >
           <div className="flex flex-col leading-tight">
     <span className="font-perandory first-letter:!font-amoresa first-letter:text-3xl">
@@ -48,7 +48,7 @@ export default function BubbleGrid() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0 }}
-              className="absolute -bottom-28 flex gap-6"
+className="absolute right-0 top-1/2 translate-x-full -translate-y-1/2 flex flex-col gap-4"
             >
               <Link to="/projects">
                 <div className="w-24 h-24 rounded-full bg-[#f2f4ff]/70 text-[#558cdd] shadow-md flex items-center justify-center hover:scale-105 transition">
@@ -77,7 +77,7 @@ export default function BubbleGrid() {
       >
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="w-48 h-48 rounded-full bg-[#efdbff]/70 text-[#72409b] backdrop-blur-md shadow-xl flex items-center justify-center cursor-pointer"
+          className="w-64 h-64 rounded-full bg-[#efdbff]/70 text-[#72409b] text-xl lg:text-4xl backdrop-blur-md shadow-xl flex items-center justify-center cursor-pointer"
         >
             <div className="flex flex-col leading-tight">
     <span className="font-perandory first-letter:!font-amoresa first-letter:text-3xl">
@@ -95,8 +95,8 @@ export default function BubbleGrid() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0 }}
-              className="absolute -bottom-28 flex gap-6"
-            >
+              className="absolute left-0 top-1/2 -translate-x-full -translate-y-1/2 flex flex-col gap-4"
+            > 
               <Link to="/writing">
                 <div className="w-20 h-20 rounded-full bg-[#efdbff]/70 text-[#72409b] shadow-md flex items-center justify-center hover:scale-105 transition">
                   <span className="font-perandory first-letter:!font-amoresa first-letter:text-3xl">
@@ -127,7 +127,7 @@ export default function BubbleGrid() {
       <Link to="/contact">
         <motion.div
           whileHover={{ scale: 1.1 }}
-  className="w-48 h-48 rounded-full bg-[#c7edd7]/70 text-[#248955] backdrop-blur-md shadow-xl flex items-center justify-center cursor-pointer"
+          className="w-64 h-64 rounded-full bg-[#c7edd7]/70 text-[#248955] text-xl lg:text-4xl backdrop-blur-md shadow-xl flex items-center justify-center cursor-pointer"
 >
   <div className="flex flex-col leading-tight">
     <span className="font-perandory first-letter:!font-amoresa first-letter:text-3xl">
