@@ -92,3 +92,11 @@ span:first-letter {
     transform: translateY(0);
   }
 }
+
+/* CodeDeveloper */
+
+.page-bg-blue {
+  background: #91c1ffcb 20%;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
