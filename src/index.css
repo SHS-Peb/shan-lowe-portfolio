@@ -28,6 +28,10 @@ html, body {
   font-family: 'Perandory-Regular';
 }
 
+.font-times-new-roman {
+  font-family: "Times New Roman", serif;
+}
+
 h1 {
   font-family: 'Amoresa';
   font-weight: lighter;

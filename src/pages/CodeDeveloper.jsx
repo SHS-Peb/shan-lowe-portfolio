@@ -19,7 +19,7 @@ export default function CodeDeveloper() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-amoresa text-[#ffffff] mb-2">
-            Code Developer
+            Junior Code Developer
           </h1>
           <p className="font-perandory text-[#3a3a3a] opacity-80">
             Exploring projects, spotlights, and everything in between.
@@ -38,7 +38,7 @@ export default function CodeDeveloper() {
             <h2 className="text-2xl font-amoresa mb-4 text-[#558cdd]">
               Hi, I'm Shannon
             </h2>
-            <p className="font-perandory leading-relaxed"></p>
+            <p className="font-perandory font-calibri leading-relaxed"></p>
           </motion.div>
 
           {/* Right */}
@@ -52,7 +52,7 @@ export default function CodeDeveloper() {
               Technical Skills
             </h2>
 
-            <ul className="list-disc pl-6 space-y-1 font-perandory">
+            <ul className="list-disc pl-6 space-y-1 font-times-new-roman">
               <li>Front-End: HTML5, CSS3, JavaScript, React</li>
               <li>Back-End: Node.js, Express.js</li>
               <li>Databases: MongoDB, MySQL</li>

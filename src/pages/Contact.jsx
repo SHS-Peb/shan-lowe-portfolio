@@ -55,12 +55,12 @@ export default function Contact() {
               href="https://www.linkedin.com/in/YOUR-LINKEDIN"
               target="_blank"
               rel="noreferrer"
-              className="bg-[#4f9f72] text-white rounded-[30px] px-6 py-4 flex items-center justify-between shadow-md border border-white/70"
+              className="bg-[#4f9f72] text-[#1f3b28] rounded-[30px] px-6 py-4 flex items-center justify-between shadow-md border border-white/70"
             >
               <div>
                 <h2 className="text-xl font-semibold">LinkedIn</h2>
-                <p className="text-sm text-white/85">
-                  for a peek into my work life
+                <p className="text-sm text-[#1f3b28] font-times-new-roman">
+                  For a peek into my work life
                 </p>
               </div>
               <div className="w-11 h-11 rounded-full border-2 border-white flex items-center justify-center text-sm font-bold">
@@ -73,12 +73,12 @@ export default function Contact() {
               href="https://github.com/SHS-Peb"
               target="_blank"
               rel="noreferrer"
-              className="bg-[#4f9f72] text-white rounded-[30px] px-6 py-4 flex items-center justify-between shadow-md border border-white/70"
+              className="bg-[#4f9f72] text-[#1f3b28] rounded-[30px] px-6 py-4 flex items-center justify-between shadow-md border border-white/70"
             >
               <div>
                 <h2 className="text-xl font-semibold">GitHub</h2>
-                <p className="text-sm text-white/85">
-                  find all my coding here
+                <p className="text-sm text-[#1f3b28] font-times-new-roman">
+                  Find all my coding here
                 </p>
               </div>
               <div className="w-11 h-11 rounded-full border-2 border-white flex items-center justify-center text-lg font-bold">
@@ -87,12 +87,12 @@ export default function Contact() {
             </a>
 
             {/* TikTok */}
-            <div className="bg-[#4f9f72] text-white rounded-[30px] px-6 py-5 shadow-md border border-white/70">
+            <div className="bg-[#4f9f72] text-[#1f3b28] rounded-[30px] px-6 py-5 shadow-md border border-white/70">
               <div className="flex items-center justify-between mb-4">
                 <div>
                   <h2 className="text-xl font-semibold">TikTok</h2>
-                  <p className="text-sm text-white/85">
-                    videos of me in the wild
+                  <p className="text-sm text-[#1f3b28] font-times-new-roman">
+                    Videos of me in the wild
                   </p>
                 </div>
                 <div className="w-11 h-11 rounded-full border-2 border-white flex items-center justify-center text-xs font-bold">
@@ -105,7 +105,7 @@ export default function Contact() {
                   href="https://www.tiktok.com/@YOUR-TECH-ACCOUNT"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-white text-[#4f9f72] rounded-full px-6 py-2 text-sm font-semibold shadow-sm"
+                  className="bg-[#a9d9b5] text-[#1f3b28] rounded-full px-6 py-2 text-sm font-semibold shadow-sm"
                 >
                   Tech
                 </a>
@@ -113,7 +113,7 @@ export default function Contact() {
                   href="https://www.tiktok.com/@YOUR-WRITING-ACCOUNT"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-white text-[#4f9f72] rounded-full px-6 py-2 text-sm font-semibold shadow-sm"
+                  className="bg-[#a9d9b5] text-[#1f3b28] rounded-full px-6 py-2 text-sm font-semibold shadow-sm"
                 >
                   Writing
                 </a>
@@ -122,20 +122,20 @@ export default function Contact() {
           </div>
 
           {/* RIGHT COLUMN – EMAIL FORM */}
-          <div className="bg-[#4f9f72] text-white rounded-[30px] px-8 py-8 shadow-md border border-white/70">
+          <div className="bg-[#4f9f72] text-[#1f3b28] rounded-[30px] px-8 py-8 shadow-md border border-white/70">
             <div className="flex items-center justify-between mb-4">
               <div>
-                <h2 className="text-2xl font-semibold">Email</h2>
-                <p className="text-sm text-white/85">lets chat</p>
+                <h2 className="text-2xl font-semibold ">Email</h2>
+                <p className="text-sm text-[#1f3b28] font-times-new-roman">Lets Chat</p>
               </div>
               <div className="w-11 h-11 rounded-full border-2 border-white flex items-center justify-center text-lg">
                 ✉
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4 font-times-new-roman">
               <div>
-                <label className="text-xs uppercase tracking-wide text-white/85">
+                <label className="text-xs uppercase tracking-wide text-[#1f3b28]">
                   Your Email
                 </label>
                 <input
@@ -147,7 +147,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="text-xs uppercase tracking-wide text-white/85">
+                <label className="text-xs uppercase tracking-wide text-[#1f3b28]">
                   Message
                 </label>
                 <textarea
