@@ -104,3 +104,9 @@ span:first-letter {
   background-attachment: fixed;
   min-height: 100vh;
 }
+
+.page-bg-pink {
+  background: #ffdef5 20%;
+  background-attachment: fixed;
+  min-height: 100vh;
+}

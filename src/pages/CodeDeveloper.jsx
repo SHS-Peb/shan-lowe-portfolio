@@ -15,15 +15,26 @@ export default function CodeDeveloper() {
   return (
     <div className="min-h-screen w-full page-bg-blue">
       <section className="max-w-6xl mx-auto flex flex-col items-center justify-start pt-32 md:pt-20 px-6">
+        <div className="max-w-6xl mx-auto px-6 space-y-16">
 
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-amoresa text-[#ffffff] mb-2">
-            Junior Code Developer
-          </h1>
-          <p className="font-perandory text-[#3a3a3a] opacity-80">
-            Exploring projects, spotlights, and everything in between.
-          </p>
+          {/* Top row – Circle + Text */}
+          <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center mb-12">
+
+            {/* Circle Image Placeholder */}
+            <div className="w-82 h-82 rounded-full overflow-hidden bg-[#FFC7F0] border-2 border-[#FFBEEB] shadow-md flex items-center justify-center">
+              <img
+                alt="Tech Image"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Name + Role */}
+            <div className="space-y-2">
+              <h1 className="text-5xl font-amoresa text-[#ffffff] mb-2">Shannon Lowe</h1>
+              <p className="font-perandory text-[#3a3a3a] opacity-80">Junior Code Developer</p>
+              <p className="font-perandory text-[#3a3a3a] opacity-80">Sydney, Australia • She/Her</p>
+            </div>
+          </div>
         </div>
 
         {/* --- Section 1: About / Overview --- */}
@@ -63,20 +74,20 @@ export default function CodeDeveloper() {
         </div>
 
         {/* Projects */}
-<div id="projects" className="max-w-5xl w-full mb-24">
-  <h2 className="text-3xl font-amoresa text-[#558cdd] mb-4">Projects</h2>
+        <div id="projects" className="max-w-5xl w-full mb-24">
+          <h2 className="text-3xl font-amoresa text-[#558cdd] mb-4">Projects</h2>
 
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6 }}
-    viewport={{ once: true }}
-    className="grid md:grid-cols-2 gap-8"
-  >
-    {[1, 2].map((i) => (
-      <div
-        key={i}
-        className="
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="grid md:grid-cols-2 gap-8"
+          >
+            {[1, 2].map((i) => (
+              <div
+                key={i}
+                className="
           h-48 
           rounded-3xl
           bg-white/20
@@ -85,29 +96,29 @@ export default function CodeDeveloper() {
           shadow-[0_8px_32px_rgba(0,0,0,0.1)]
           flex items-center justify-center
         "
-      >
-        <span className="font-perandory text-[#558cdd] text-xl opacity-80">
-          Coming Soon
-        </span>
-      </div>
-    ))}
-  </motion.div>
-</div>
+              >
+                <span className="font-perandory text-[#558cdd] text-xl opacity-80">
+                  Coming Soon
+                </span>
+              </div>
+            ))}
+          </motion.div>
+        </div>
 
         {/* Spotlight */}
         <div id="spotlight" className="max-w-5xl w-full mb-24">
           <h2 className="text-3xl font-amoresa text-[#558cdd] mb-4">Side Quests</h2>
           <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6 }}
-    viewport={{ once: true }}
-    className="grid md:grid-cols-2 gap-8"
-  >
-    {[1, 2].map((i) => (
-      <div
-        key={i}
-        className="
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="grid md:grid-cols-2 gap-8"
+          >
+            {[1, 2].map((i) => (
+              <div
+                key={i}
+                className="
           h-48 
           rounded-3xl
           bg-white/20
@@ -116,14 +127,14 @@ export default function CodeDeveloper() {
           shadow-[0_8px_32px_rgba(0,0,0,0.1)]
           flex items-center justify-center
         "
-      >
-        <span className="font-perandory text-[#558cdd] text-xl opacity-80">
-          Coming Soon
-        </span>
-      </div>
-    ))}
-  </motion.div>
-</div>
+              >
+                <span className="font-perandory text-[#558cdd] text-xl opacity-80">
+                  Coming Soon
+                </span>
+              </div>
+            ))}
+          </motion.div>
+        </div>
 
       </section>
     </div>
