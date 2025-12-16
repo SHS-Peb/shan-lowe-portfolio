@@ -13,7 +13,7 @@ export default function Contact() {
     const subject = encodeURIComponent("Portfolio Enquiry");
     const body = encodeURIComponent(`From: ${email}\n\n${message}`);
 
-    window.location.href = `mailto:YOUR_EMAIL_HERE?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:shannon.au.lowe@gmail.com?subject=${subject}&body=${body}`;
     form.reset();
   };
 
@@ -40,7 +40,7 @@ export default function Contact() {
             <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-[#cfead8] border-2 border-[#4a6d52] shadow-[0_10px_40px_rgba(0,0,0,0.18)] flex items-center justify-center">
               <img
                 src={contactProfile}
-                alt="Shannon Lowe portrait"
+                alt="Profile pic"
                 className="w-full h-full object-cover"
               />
             </div>

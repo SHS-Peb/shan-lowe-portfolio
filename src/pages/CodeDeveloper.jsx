@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import codeProfile from "../assets/imgs/codeProfile.jpg";
 
 export default function CodeDeveloper() {
   const { hash } = useLocation();
@@ -28,9 +29,13 @@ export default function CodeDeveloper() {
             className="flex flex-col md:flex-row gap-10 md:gap-16 items-center justify-center mb-12"
           >
             {/* Circle */}
-            <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-[#FFC7F0] border-2 border-[#FFBEEB] shadow-[0_10px_40px_rgba(0,0,0,0.18)] flex items-center justify-center">
-              
-            </div>
+            <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-[#cfead8] border-2 border-[#4a6d52] shadow-[0_10px_40px_rgba(0,0,0,0.18)] flex items-center justify-center">
+                          <img
+                            src={codeProfile}
+                            alt="Profile pic"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
 
             {/* Name + Role */}
             <div className="space-y-2 text-center">
