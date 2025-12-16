@@ -20,7 +20,7 @@ export default function CodeDeveloper() {
       <section className="max-w-6xl mx-auto flex flex-col items-center justify-start pt-32 md:pt-20 px-6">
         <div className="w-full space-y-16">
 
-          {/* HERO (centered + motion) */}
+          {/* HERO */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export default function CodeDeveloper() {
           >
             {/* Circle */}
             <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-[#FFC7F0] border-2 border-[#FFBEEB] shadow-[0_10px_40px_rgba(0,0,0,0.18)] flex items-center justify-center">
-              {/* add src later if you want */}
+              
             </div>
 
             {/* Name + Role */}
@@ -61,7 +61,7 @@ export default function CodeDeveloper() {
                 Hi, I'm Shannon
               </h2>
               <p className="font-perandory leading-relaxed">
-                {/* your intro text */}
+                {/*intro text */}
               </p>
             </motion.div>
 

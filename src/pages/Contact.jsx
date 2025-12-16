@@ -1,5 +1,7 @@
 // src/pages/Contact.jsx
 import { motion } from "framer-motion";
+import contactProfile from "../assets/imgs/contactProfile.jpg";
+
 
 export default function Contact() {
   const handleSubmit = (e) => {
@@ -15,7 +17,7 @@ export default function Contact() {
     form.reset();
   };
 
-  // shared styles (keeps things consistent + easy to tweak)
+  // shared styles
   const glassCard =
     "bg-white/20 backdrop-blur-md border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.12)]";
   const roundedCard = "rounded-[30px]";
@@ -35,16 +37,12 @@ export default function Contact() {
             className="flex flex-col md:flex-row gap-10 md:gap-16 items-center justify-center"
           >
             {/* Photo placeholder circle */}
-            <div
-              className={`w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full ${glassCard} flex items-center justify-center`}
-            >
-              {/* Optional image
+            <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-[#cfead8] border-2 border-[#4a6d52] shadow-[0_10px_40px_rgba(0,0,0,0.18)] flex items-center justify-center">
               <img
-                src="/your-photo.jpg"
-                alt="Shannon Lowe"
-                className="w-full h-full rounded-full object-cover"
+                src={contactProfile}
+                alt="Shannon Lowe portrait"
+                className="w-full h-full object-cover"
               />
-              */}
             </div>
 
             {/* Name + title */}
@@ -61,7 +59,7 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* MAIN GRID (motion) */}
+          {/* MAIN GRID */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
