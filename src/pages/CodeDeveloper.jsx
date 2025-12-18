@@ -2,6 +2,26 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import codeProfile from "../assets/imgs/codeProfile.jpg";
+import portfolio from "../assets/imgs/projects/portfolio.PNG"
+
+const projects = [
+  {
+    title: "Firefly Mentoring",
+    image: "", /*LINK*/
+    description:
+      "A mentoring website built with a soft glow aesthetic, featuring service packages, booking flow, and responsive design.",
+    tech: ["React", "Vite", "Tailwind", "JavaScript"],
+    link: "", /*LINK*/
+  },
+  {
+    title: "Portfolio Website",
+    image: portfolio, /*LINK*/
+    description:
+      "My personal developer portfolio showcasing projects, skills, and creative design choices.",
+    tech: ["React", "Tailwind", "Framer Motion"],
+    link: "", /*LINK*/
+  },
+];
 
 export default function CodeDeveloper() {
   const { hash } = useLocation();
@@ -30,12 +50,12 @@ export default function CodeDeveloper() {
           >
             {/* Circle */}
             <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-[#cfead8] border-2 border-[#4a6d52] shadow-[0_10px_40px_rgba(0,0,0,0.18)] flex items-center justify-center">
-                          <img
-                            src={codeProfile}
-                            alt="Profile pic"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
+              <img
+                src={codeProfile}
+                alt="Profile pic"
+                className="w-full h-full object-cover"
+              />
+            </div>
 
             {/* Name + Role */}
             <div className="space-y-2 text-center">
@@ -131,15 +151,54 @@ export default function CodeDeveloper() {
               viewport={{ once: true }}
               className="grid md:grid-cols-2 gap-8"
             >
-              {[1, 2].map((i) => (
-                <div
-                  key={i}
-                  className={`${glassCard} h-48 rounded-3xl flex items-center justify-center`}
+              {projects.map((project) => (
+                <motion.div
+                  key={project.title}
+                  whileHover={{ scale: 1.02 }}
+                  className="group relative h-64 rounded-3xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.15)]"
                 >
-                  <span className="font-perandory text-[#558cdd] text-xl opacity-80">
-                    Coming Soon
-                  </span>
-                </div>
+                  {/* Image */}
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+
+                  {/* Overlay */}
+                  <div
+                    className="absolute inset-0 bg-[#558cdd]/90 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6 text-white"
+                  >
+                    <h3 className="text-xl font-amoresa mb-2">
+                      {project.title}
+                    </h3>
+
+                    <p className="font-perandory text-sm leading-relaxed mb-3">
+                      {project.description}
+                    </p>
+
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tech.map((t) => (
+                        <span
+                          key={t}
+                          className="text-xs px-3 py-1 rounded-full bg-white/20 border border-white/30"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="self-start rounded-full bg-white text-[#558cdd] px-4 py-2 text-sm font-semibold hover:bg-white/90 transition"
+                      >
+                        View Project
+                      </a>
+                    )}
+                  </div>
+                </motion.div>
               ))}
             </motion.div>
           </div>
