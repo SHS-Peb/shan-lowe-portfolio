@@ -3,23 +3,52 @@ import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import codeProfile from "../assets/imgs/codeProfile.jpg";
 import portfolio from "../assets/imgs/projects/portfolio.PNG"
+import firefly from "../assets/imgs/projects/firefly.jpg"
+import gratify from "../assets/imgs/projects/gratify.png"
+import fitness from "../assets/imgs/projects/fitness.png"
+import navigate from "../assets/imgs/projects/navigate.png"
+
 
 const projects = [
   {
     title: "Firefly Mentoring",
-    image: "", /*LINK*/
+    image: firefly,
     description:
       "A mentoring website built with a soft glow aesthetic, featuring service packages, booking flow, and responsive design.",
     tech: ["React", "Vite", "Tailwind", "JavaScript"],
-    link: "", /*LINK*/
+    link: "https://fireflymentoring.com",
   },
   {
     title: "Portfolio Website",
-    image: portfolio, /*LINK*/
+    image: portfolio,
     description:
       "My personal developer portfolio showcasing projects, skills, and creative design choices.",
     tech: ["React", "Tailwind", "Framer Motion"],
-    link: "", /*LINK*/
+    link: "https://github.com/SHS-Peb/shan-lowe-portfolio",
+  },
+  {
+    title: "Fit Connect Pro",
+    image: fitness,
+    description:
+      "A fitness-focused web application designed to help users connect, track goals, and stay motivated through shared progress and community features.",
+    tech: ["React", "JavaScript", "Node.js", "Express", "MongoDB"],
+    link: "https://github.com/SHS-Peb/Fit-Connect-Pro",
+  },
+  {
+    title: "Gratify Me",
+    image: gratify,
+    description:
+      "A gratitude and self-reflection app that encourages positive habits through daily entries and simple, calming interactions.",
+    tech: ["JavaScript", "HTML", "CSS", "Local Storage"],
+    link: "https://github.com/SHS-Peb/gratify-me",
+  },
+  {
+    title: "NavigateUrWeek",
+    image: navigate,
+    description:
+      "A weekly planning and organisation app that helps users structure tasks, priorities, and routines for a balanced and productive week.",
+    tech: ["JavaScript", "HTML", "CSS", "Local Storage"],
+    link: "https://github.com/SHS-Peb/NavigateUrWeek",
   },
 ];
 
@@ -85,7 +114,7 @@ export default function CodeDeveloper() {
               <h2 className="text-2xl font-amoresa mb-4 text-[#558cdd]">
                 Hi, I'm Shannon
               </h2>
-              <p className="font-perandory leading-relaxed">
+              <p className="font-times-new-roman leading-relaxed">
                 {/*intro text */}
               </p>
             </motion.div>
@@ -125,32 +154,6 @@ export default function CodeDeveloper() {
               viewport={{ once: true }}
               className="grid md:grid-cols-2 gap-8"
             >
-              {[1, 2].map((i) => (
-                <div
-                  key={i}
-                  className={`${glassCard} h-48 rounded-3xl flex items-center justify-center`}
-                >
-                  <span className="font-perandory text-[#558cdd] text-xl opacity-80">
-                    Coming Soon
-                  </span>
-                </div>
-              ))}
-            </motion.div>
-          </div>
-
-          {/* SIDE QUESTS */}
-          <div id="spotlight" className="w-full mb-24">
-            <h2 className="text-3xl font-amoresa text-[#558cdd] mb-4">
-              Side Quests
-            </h2>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="grid md:grid-cols-2 gap-8"
-            >
               {projects.map((project) => (
                 <motion.div
                   key={project.title}
@@ -172,7 +175,7 @@ export default function CodeDeveloper() {
                       {project.title}
                     </h3>
 
-                    <p className="font-perandory text-sm leading-relaxed mb-3">
+                    <p className="font-times-new-roman text-sm leading-relaxed mb-3">
                       {project.description}
                     </p>
 
@@ -200,6 +203,33 @@ export default function CodeDeveloper() {
                   </div>
                 </motion.div>
               ))}
+            </motion.div>
+          </div>
+
+          {/* SIDE QUESTS */}
+          <div id="spotlight" className="w-full mb-24">
+            <h2 className="text-3xl font-amoresa text-[#558cdd] mb-4">
+              Side Quests
+            </h2>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="grid md:grid-cols-2 gap-8"
+            >
+              {[1, 2].map((i) => (
+                <div
+                  key={i}
+                  className={`${glassCard} h-48 rounded-3xl flex items-center justify-center`}
+                >
+                  <span className="font-perandory text-[#558cdd] text-xl opacity-80">
+                    Coming Soon
+                  </span>
+                </div>
+              ))}
+
             </motion.div>
           </div>
 
