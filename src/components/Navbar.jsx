@@ -65,7 +65,7 @@ export default function Navbar() {
         Advocacy
       </NavLink>
 
-      {/* Creative + dropdown */}
+      {/* Creative + dropdown 
       <div
         onMouseEnter={() => setCreativeOpen(true)}
         onMouseLeave={() => setCreativeOpen(false)}
@@ -108,14 +108,14 @@ export default function Navbar() {
         </AnimatePresence>
       </div>
 
-      {/* Blog */}
+      {/* Blog 
       <NavLink
         to="/blog"
         className={`${base} bg-[var(--clr-blog)] hover:brightness-110`}
       >
         Blog
       </NavLink>
-
+*/}
       {/* Contact Me */}
       <NavLink
         to="/contact"
