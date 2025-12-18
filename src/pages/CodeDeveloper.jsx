@@ -7,7 +7,6 @@ import firefly from "../assets/imgs/projects/firefly.jpg"
 import gratify from "../assets/imgs/projects/gratify.png"
 import fitness from "../assets/imgs/projects/fitness.png"
 import navigate from "../assets/imgs/projects/navigate.png"
-import electron from "../assets/imgs/side_quests/electron.PNG"
 
 
 const projects = [
@@ -55,25 +54,28 @@ const projects = [
 
 const blogPosts = [
   {
-    title: "Step-by-Step Method for Breaking Down Code",
-    image: "",
+    title: "Step-by-Step Method for Breaking Down Wordy Tech Interview Questions",
     about:
       "A practical approach to understanding complex code by breaking it into manageable, logical steps.",
     link: "https://tech-talk-in-pink.blogspot.com/2025/05/step-by-step-method-for-breaking-down.html",
   },
   {
     title: "Getting Started with Electron.js",
-    image: electron,
     about:
       "An introduction to Electron.js and how it can be used to build cross-platform desktop applications with web technologies.",
     link: "https://tech-talk-in-pink.blogspot.com/2025/08/getting-started-with-electronjs.html",
   },
   {
     title: "5 Lesser-Known Blogs That Help Me Grow as a Developer",
-    image: "",
     about:
       "A curated list of underrated blogs that have shaped my learning and mindset as a developer.",
     link: "https://tech-talk-in-pink.blogspot.com/2025/07/5-lesser-known-blogs-that-help-me-grow.html",
+  },
+  {
+    title: "Learning a New Coding Language",
+    about:
+      "A how to guide on learning new coding languages when it feels too much.",
+    link: "https://tech-talk-in-pink.blogspot.com/2025/04/learning-a-new-coding-language.html",
   },
 ];
 
@@ -140,7 +142,7 @@ export default function CodeDeveloper() {
                 Hi, I'm Shannon
               </h2>
               <p className="font-times-new-roman leading-relaxed">
-                {/*intro text */}
+                For me, coding is a creative act of problem-solving that turns complexity into clarity, making everyday experiences simpler and more joyful. I’m driven by the belief that behind every great app or tool is a story. A story of someone’s challenge, hope, or dream, and I want my work to be part of those stories, helping others move forward with ease and confidence
               </p>
             </motion.div>
 
@@ -150,18 +152,18 @@ export default function CodeDeveloper() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className={`${glassCard} rounded-3xl p-8 text-[#1e293b]`}
+              className={`${glassCard} rounded-3xl p-8`}
             >
               <h2 className="text-2xl font-amoresa mb-4 text-[#558cdd]">
                 Technical Skills
               </h2>
 
               <ul className="list-disc pl-6 space-y-1 font-times-new-roman">
-                <li>Front-End: HTML5, CSS3, JavaScript, React</li>
-                <li>Back-End: Node.js, Express.js</li>
+                <li>Front-End: HTML5, CSS, React, Tailwind CSS</li>
+                <li>Back-End: Node.js, Express.js, Python</li>
+                <li>Programming Languages: JavaScript, Python, C++</li>
                 <li>Databases: MongoDB, MySQL</li>
                 <li>Version Control: Git, GitHub</li>
-                <li>Deployment: Heroku, Netlify</li>
               </ul>
             </motion.div>
           </div>
@@ -194,13 +196,13 @@ export default function CodeDeveloper() {
 
                   {/* Overlay */}
                   <div
-                    className="absolute inset-0 bg-[#558cdd]/90 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6 text-white"
+                    className="absolute inset-0 bg-[#558cdd]/90 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6"
                   >
                     <h3 className="text-xl font-amoresa mb-2">
                       {project.title}
                     </h3>
 
-                    <p className="font-times-new-roman text-sm leading-relaxed mb-3">
+                    <p className="font-times-new-roman text-l leading-relaxed mb-3">
                       {project.description}
                     </p>
 
@@ -244,49 +246,43 @@ export default function CodeDeveloper() {
               viewport={{ once: true }}
               className="grid md:grid-cols-2 gap-8"
             >
-            {blogPosts.map((post) => (
-  <motion.a
-    key={post.title}
-    href={post.link}
-    target="_blank"
-    rel="noreferrer"
-    whileHover={{ scale: 1.02 }}
-    className="group block"
-  >
-    {/* Title ABOVE the card */}
-    <h3 className="mb-2 px-1 font-amoresa text-lg text-[#558cdd]">
-      {post.title}
-    </h3>
+              {blogPosts.map((post) => (
+                <motion.a
+                  key={post.title}
+                  href={post.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  whileHover={{ scale: 1.02 }}
+                  className="group block"
+                >
+                  <div className="relative h-48 rounded-3xl bg-white/20 backdrop-blur-md border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.12)] flex flex-col items-center justify-center px-8 text-center">
+                    {/* Default content */}
+                    <div className="group-hover:opacity-0 transition duration-200">
+                      <h3 className="font-amoresa text-2xl mb-2">
+                        {post.title}
+                      </h3>
+                      <p className="font-times-new-roman text-base text-[#3a3a3a] opacity-75">
+                        by Shannon Lowe
+                      </p>
+                    </div>
 
-    {/* Card */}
-    <div className="relative h-44 rounded-3xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
-      {/* Image */}
-      <img
-        src={post.image}
-        alt={post.title}
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+                    {/* Hover content */}
+                    <div
+                      className="absolute inset-0 flex flex-col items-center justify-center px-8 text-center opacity-0 group-hover:opacity-100 transition duration-200"
+                    >
+                      <p className="font-times-new-roman text-base leading-relaxed text-[#1e293b] max-w-md">
+                        {post.about}
+                      </p>
 
-      {/* Hover overlay */}
-      <div
-        className="absolute inset-0 bg-[#558cdd]/75 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4 text-white"
-      >
-        <p className="font-perandory text-sm leading-relaxed opacity-95">
-          {post.about}
-        </p>
-
-        <span className="mt-2 text-sm font-semibold underline underline-offset-4">
-          Read post →
-        </span>
-      </div>
-    </div>
-  </motion.a>
-))}
-
-
+                      <span className="mt-4 text-base font-semibold text-[#558cdd] underline underline-offset-4">
+                        Read post →
+                      </span>
+                    </div>
+                  </div>
+                </motion.a>
+              ))}
             </motion.div>
           </div>
-
         </div>
       </section>
     </div>
