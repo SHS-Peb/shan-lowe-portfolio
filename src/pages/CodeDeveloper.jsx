@@ -7,6 +7,7 @@ import firefly from "../assets/imgs/projects/firefly.jpg"
 import gratify from "../assets/imgs/projects/gratify.png"
 import fitness from "../assets/imgs/projects/fitness.png"
 import navigate from "../assets/imgs/projects/navigate.png"
+import electron from "../assets/imgs/side_quests/electron.PNG"
 
 
 const projects = [
@@ -49,6 +50,30 @@ const projects = [
       "A weekly planning and organisation app that helps users structure tasks, priorities, and routines for a balanced and productive week.",
     tech: ["JavaScript", "HTML", "CSS", "Local Storage"],
     link: "https://github.com/SHS-Peb/NavigateUrWeek",
+  },
+];
+
+const blogPosts = [
+  {
+    title: "Step-by-Step Method for Breaking Down Code",
+    image: "",
+    about:
+      "A practical approach to understanding complex code by breaking it into manageable, logical steps.",
+    link: "https://tech-talk-in-pink.blogspot.com/2025/05/step-by-step-method-for-breaking-down.html",
+  },
+  {
+    title: "Getting Started with Electron.js",
+    image: electron,
+    about:
+      "An introduction to Electron.js and how it can be used to build cross-platform desktop applications with web technologies.",
+    link: "https://tech-talk-in-pink.blogspot.com/2025/08/getting-started-with-electronjs.html",
+  },
+  {
+    title: "5 Lesser-Known Blogs That Help Me Grow as a Developer",
+    image: "",
+    about:
+      "A curated list of underrated blogs that have shaped my learning and mindset as a developer.",
+    link: "https://tech-talk-in-pink.blogspot.com/2025/07/5-lesser-known-blogs-that-help-me-grow.html",
   },
 ];
 
@@ -219,16 +244,45 @@ export default function CodeDeveloper() {
               viewport={{ once: true }}
               className="grid md:grid-cols-2 gap-8"
             >
-              {[1, 2].map((i) => (
-                <div
-                  key={i}
-                  className={`${glassCard} h-48 rounded-3xl flex items-center justify-center`}
-                >
-                  <span className="font-perandory text-[#558cdd] text-xl opacity-80">
-                    Coming Soon
-                  </span>
-                </div>
-              ))}
+            {blogPosts.map((post) => (
+  <motion.a
+    key={post.title}
+    href={post.link}
+    target="_blank"
+    rel="noreferrer"
+    whileHover={{ scale: 1.02 }}
+    className="group block"
+  >
+    {/* Title ABOVE the card */}
+    <h3 className="mb-2 px-1 font-amoresa text-lg text-[#558cdd]">
+      {post.title}
+    </h3>
+
+    {/* Card */}
+    <div className="relative h-44 rounded-3xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
+      {/* Image */}
+      <img
+        src={post.image}
+        alt={post.title}
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      {/* Hover overlay */}
+      <div
+        className="absolute inset-0 bg-[#558cdd]/75 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4 text-white"
+      >
+        <p className="font-perandory text-sm leading-relaxed opacity-95">
+          {post.about}
+        </p>
+
+        <span className="mt-2 text-sm font-semibold underline underline-offset-4">
+          Read post →
+        </span>
+      </div>
+    </div>
+  </motion.a>
+))}
+
 
             </motion.div>
           </div>
