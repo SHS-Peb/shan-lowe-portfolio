@@ -30,7 +30,7 @@ export default function Advocacy() {
     "bg-white/20 backdrop-blur-md border border-white/30 rounded-3xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.10)]";
 
   return (
-    <div className="min-h-screen w-full bg-[#FFD6F3]">
+    <div className="w-full bg-[#FFD6F3]">
       <section className="max-w-6xl mx-auto flex flex-col items-center justify-start pt-32 md:pt-20 px-6">
         <div className="w-full space-y-16">
 

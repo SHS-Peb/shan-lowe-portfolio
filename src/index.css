@@ -39,7 +39,7 @@ h1 {
 }
 
 /* Pastel background */
-body {
+/* body {
   background: linear-gradient(
       135deg,
       #e1c0e0fa 8%,
@@ -51,9 +51,26 @@ body {
   background-attachment: fixed;
   position: relative;
   z-index: 0;
+} */
+
+.bg-home-gradient {
+  background: linear-gradient(
+    135deg,
+    #e1c0e0fa 8%,
+    #91c1ffcb 20%,
+    #e2caf5 60%,
+    #b6e5d5 100%
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
-body::before {
+.bg-dots {
+  position: relative;
+  z-index: 0;
+}
+
+.bg-dots::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -63,6 +80,7 @@ body::before {
   mix-blend-mode: overlay;
   z-index: 1;
 }
+
 
 #root {
   position: relative;
@@ -100,13 +118,19 @@ span:first-letter {
 /* CodeDeveloper */
 
 .page-bg-blue {
-  background: #91c1ffcb 20%;
+  background: #6ba5f1cb;
   background-attachment: fixed;
   min-height: 100vh;
 }
 
 .page-bg-pink {
-  background: #ffdef5 20%;
+  background: #FFD6F3;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.page-bg-green {
+  background: #a9d9b5;
   background-attachment: fixed;
   min-height: 100vh;
 }

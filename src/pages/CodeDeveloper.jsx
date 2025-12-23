@@ -93,7 +93,7 @@ export default function CodeDeveloper() {
     "bg-white/20 backdrop-blur-md border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.12)]";
 
   return (
-    <div className="min-h-screen w-full page-bg-blue">
+    <div className="w-full">
       <section className="max-w-6xl mx-auto flex flex-col items-center justify-start pt-32 md:pt-20 px-6">
         <div className="w-full space-y-16">
 
@@ -113,9 +113,9 @@ export default function CodeDeveloper() {
               />
             </div>
 
-            {/* Name + Role */}
+            {/* Name + Role 558cdd*/}
             <div className="space-y-2 text-center">
-              <h1 className="text-5xl font-amoresa text-[#558cdd] mb-2">
+              <h1 className="text-5xl font-amoresa text-white mb-2">
                 Shannon Lowe
               </h1>
               <p className="font-perandory text-[#3a3a3a] opacity-80">
@@ -138,7 +138,7 @@ export default function CodeDeveloper() {
               viewport={{ once: true }}
               className={`${glassCard} rounded-3xl p-8 text-[#1e293b]`}
             >
-              <h2 className="text-2xl font-amoresa mb-4 text-[#558cdd]">
+              <h2 className="text-2xl font-amoresa mb-4 text-white">
                 Hi, I'm Shannon
               </h2>
               <p className="font-times-new-roman leading-relaxed">
@@ -154,7 +154,7 @@ export default function CodeDeveloper() {
               viewport={{ once: true }}
               className={`${glassCard} rounded-3xl p-8`}
             >
-              <h2 className="text-2xl font-amoresa mb-4 text-[#558cdd]">
+              <h2 className="text-2xl font-amoresa mb-4 text-white">
                 Technical Skills
               </h2>
 
@@ -170,7 +170,7 @@ export default function CodeDeveloper() {
 
           {/* PROJECTS */}
           <div id="projects" className="w-full mb-24">
-            <h2 className="text-3xl font-amoresa text-[#558cdd] mb-4">
+            <h2 className="text-3xl font-amoresa text-white mb-4">
               Projects
             </h2>
 
@@ -235,7 +235,7 @@ export default function CodeDeveloper() {
 
           {/* SIDE QUESTS */}
           <div id="spotlight" className="w-full mb-24">
-            <h2 className="text-3xl font-amoresa text-[#558cdd] mb-4">
+            <h2 className="text-3xl font-amoresa text-white mb-4">
               Side Quests
             </h2>
 

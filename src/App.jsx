@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Layout from "./components/Layout";
 import Home from "./pages/Home/Home";
 import CodeDeveloper from "./pages/CodeDeveloper";
 import Advocacy from "./pages/Advocacy";
@@ -13,10 +12,8 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <>
-      <Navbar />
-
-      <Routes>
+    <Routes>
+      <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/code-developer" element={<CodeDeveloper />} />
         <Route path="/advocacy" element={<Advocacy />} />
@@ -26,10 +23,8 @@ function App() {
         <Route path="/acting" element={<Acting />} />
         <Route path="/photography" element={<Photography />} />
         <Route path="/contact" element={<Contact />} />
-      </Routes>
-
-      <Footer />
-    </>
+      </Route>
+    </Routes>
   );
 }
 
