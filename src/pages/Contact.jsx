@@ -85,9 +85,6 @@ export default function Contact() {
                   <h2 className={titleText}>LinkedIn</h2>
                   <p className={bodyText}>For a peek into my work life</p>
                 </div>
-                <div className="w-11 h-11 rounded-full border-2 border-white/60 flex items-center justify-center text-sm font-bold text-[#1f3b28]">
-                  in
-                </div>
               </motion.a>
 
               {/* GitHub */}
@@ -105,48 +102,24 @@ export default function Contact() {
                   <h2 className={titleText}>GitHub</h2>
                   <p className={bodyText}>Find all my coding here</p>
                 </div>
-                <div className="w-11 h-11 rounded-full border-2 border-white/60 flex items-center justify-center text-lg font-bold text-[#1f3b28]">
-                  {"{"}{"}"}
-                </div>
               </motion.a>
 
               {/* TikTok */}
-              <motion.div
+              <motion.a
+                href="https://www.tiktok.com/@techtalkinpink"
+                target="_blank"
+                rel="noreferrer"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
                 viewport={{ once: true }}
-                className={`${glassCard} ${roundedCard} px-6 py-5`}
+                className={`${glassCard} ${roundedCard} px-6 py-4 flex items-center justify-between`}
               >
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <h2 className={titleText}>TikTok</h2>
-                    <p className={bodyText}>Videos of me in the wild</p>
-                  </div>
-                  <div className="w-11 h-11 rounded-full border-2 border-white/60 flex items-center justify-center text-xs font-bold text-[#1f3b28]">
-                    TT
-                  </div>
+                <div>
+                  <h2 className={titleText}>TikTok</h2>
+                  <p className={bodyText}>Video Creations</p>
                 </div>
-
-                <div className="flex gap-4">
-                  <a
-                    href="https://www.tiktok.com/@techtalkinpink"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="bg-white/25 backdrop-blur-md border border-white/30 text-[#1f3b28] rounded-full px-6 py-2 text-sm font-semibold shadow-sm hover:bg-white/30 transition-colors"
-                  >
-                    Tech
-                  </a>
-                  {/* <a
-                    href="https://www.tiktok.com/@YOUR-WRITING-ACCOUNT"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="bg-white/25 backdrop-blur-md border border-white/30 text-[#1f3b28] rounded-full px-6 py-2 text-sm font-semibold shadow-sm hover:bg-white/30 transition-colors"
-                  >
-                    Writing
-                  </a> */}
-                </div>
-              </motion.div>
+              </motion.a>
             </div>
 
             {/* RIGHT COLUMN – EMAIL FORM */}
