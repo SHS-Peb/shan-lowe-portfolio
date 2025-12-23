@@ -64,7 +64,7 @@ export default function Advocacy() {
                 Shannon Lowe
               </h1>
               <p className="font-perandory text-[#3a3a3a] opacity-80">
-                Advocate & Mentor
+                Advocate, Mentor & Community villager
               </p>
               <p className="font-perandory text-[#3a3a3a] opacity-80">
                 Sydney, Australia • She/Her
