@@ -7,7 +7,7 @@ export default function BubbleGrid() {
   const [creativeOpen, setCreativeOpen] = useState(false);
 
   return (
-    <div className="grid grid-cols-2 gap-12 mt-20 mx-auto w-fit">
+    <div className="grid grid-cols-2 gap-12 mt-10 mx-auto w-fit">
 
       {/* Advocacy */}
       <Link to="/advocacy">

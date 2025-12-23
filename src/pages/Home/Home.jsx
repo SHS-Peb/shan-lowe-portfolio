@@ -3,7 +3,7 @@ import BubbleGrid from "../../components/BubbleGrid";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center relative overflow-hidden">
+    <section className="flex flex-col items-center justify-center relative overflow-hidden pb-24">
 
       {/* Text block */}
       <motion.div
