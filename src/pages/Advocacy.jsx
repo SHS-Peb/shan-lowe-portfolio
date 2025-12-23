@@ -23,9 +23,6 @@ export default function Advocacy() {
   const cardTight = `${glassCard} rounded-[32px] p-8`;
 
   const bodyText = "text-sm text-[#5C3558] leading-relaxed font-times-new-roman";
-  const pill =
-    "inline-flex px-6 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 shadow-sm";
-
   const bubble =
     "bg-white/20 backdrop-blur-md border border-white/30 rounded-3xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.10)]";
 
@@ -78,7 +75,7 @@ export default function Advocacy() {
                 </h2>
                 <p className={bodyText}>
                   When I was a child, I often daydreamed about the kind of adult I
-                  wished existed — someone grounded, safe, understanding, and protective.
+                  wished existed. Someone grounded, safe, understanding, and protective.
                   Over the years, through challenges, growth, and a lot of introspection,
                   I realised I had become that adult for myself.
                   <br />
@@ -111,10 +108,6 @@ export default function Advocacy() {
                   honoured to be invited back as a Kindred Warrior to support next year’s mentees.
                   I also continue my involvement with Wesley Aunts & Uncles, maintaining my connection
                   through a new bond after the graduation of my previous one.
-                  <br />
-                  <br />
-                  Beyond these programs, I’m always exploring new avenues to give back — whether through
-                  mentoring, community work, storytelling, or connection-based initiatives.
                 </p>
               </motion.div>
 
@@ -133,10 +126,6 @@ export default function Advocacy() {
                   My talks draw from my lived experience and centre around:
                   Personal growth & navigating life’s complexities, goal setting & self-belief,
                   tech pathways & supporting women in STEM, advocacy, safety, and community.
-                  <br />
-                  <br />
-                  If you have questions or would like to inquire about booking, please feel free to contact me —
-                  I’d love to collaborate.
                 </p>
               </motion.div>
             </div>
@@ -144,12 +133,6 @@ export default function Advocacy() {
 
           {/* Warrior Woman */}
           <div className="space-y-8 w-full">
-            <div className={pill}>
-              <span className="text-sm font-semibold text-[#ff84d9]">
-                Warrior Woman
-              </span>
-            </div>
-
             <div className="flex flex-col lg:flex-row gap-10">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -214,11 +197,6 @@ export default function Advocacy() {
 
           {/* Wesley Aunts & Uncles */}
           <div className="space-y-8 w-full">
-            <div className={pill}>
-              <span className="text-sm font-semibold text-[#ff84d9]">
-                Wesley Aunts & Uncles
-              </span>
-            </div>
 
             <div className="flex flex-col lg:flex-row gap-10">
               <motion.div
@@ -269,11 +247,7 @@ export default function Advocacy() {
 
           {/* She Codes Australia */}
           <div className="space-y-8 w-full">
-            <div className={pill}>
-              <span className="text-sm font-semibold text-[#ff84d9]">
-                She Codes Australia
-              </span>
-            </div>
+            
 
             <div className="flex flex-col lg:flex-row gap-10">
               <motion.div
@@ -294,7 +268,7 @@ export default function Advocacy() {
                     <br /><br />
                     I’m grateful to Kate Kirwin, the founder of She Codes Australia, for creating a pathway that truly empowers women entering the tech workforce. The program was made possible through the support of Commonwealth Bank, Telstra, and Canva, whose partnership opens doors for women who may not otherwise have access to this level of training.
                     <br /><br />
-                    Being part of She Codes Plus was not only a learning experience — it was a transformative step that strengthened my skills, broadened my network, and affirmed my commitment to pursuing a long-term future in technology.
+                    Being part of She Codes Plus has been not only a learning experience, it is a transformative step that strengthens my skills, broadens my network, and affirms my commitment to pursuing a long-term future in technology.
                   </p>
                 </div>
               </motion.div>
@@ -324,11 +298,7 @@ export default function Advocacy() {
 
           {/* Code Like A Girl */}
           <div className="space-y-8 w-full">
-            <div className={pill}>
-              <span className="text-sm font-semibold text-[#ff84d9]">
-                Code Like A Girl
-              </span>
-            </div>
+          
 
             <div className="flex flex-col lg:flex-row gap-10">
               <motion.div
@@ -371,14 +341,9 @@ export default function Advocacy() {
               </div>
             </div>
           </div>
-
-          {/* Her Tech Circle */}
+{/*
+          {/* Her Tech Circle
           <div className="space-y-8 w-full">
-            <div className={pill}>
-              <span className="text-sm font-semibold text-[#ff84d9]">
-                Her Tech Circle
-              </span>
-            </div>
 
             <div className="flex flex-col lg:flex-row gap-10">
               <motion.div
@@ -400,7 +365,7 @@ export default function Advocacy() {
                 </div>
               </motion.div>
 
-              {/* bubble grid */}
+              {/* bubble grid 
               <div className="w-full lg:w-60 flex flex-col gap-4">
                 <div className="flex gap-4">
                   <div className={`flex-1 h-32 ${bubble}`}>
@@ -421,7 +386,7 @@ export default function Advocacy() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </section>
