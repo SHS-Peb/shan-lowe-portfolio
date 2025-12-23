@@ -11,9 +11,11 @@ export default {
         ink: '#1f2937',
       },
       fontFamily: {
-        perandory: ['Perandory-Semi-Condensed', 'sans-serif'],
+        perandory: ['Perandory-Regular', 'sans-serif'],
         amoresa: ['Amoresa', 'sans-serif'],
+        times: ['"Times New Roman"', 'Times', 'serif'],
       },
+
     },
   },
   plugins: [],

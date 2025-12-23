@@ -202,18 +202,18 @@ export default function CodeDeveloper() {
                       {project.title}
                     </h3>
 
-                    <p className="font-times-new-roman text-l leading-relaxed mb-3">
+                    <p className="font-times-new-roman text-lg leading-relaxed mb-3">
                       {project.description}
                     </p>
 
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tech.map((t) => (
-                        <span
+                        <p
                           key={t}
-                          className="text-xs px-3 py-1 rounded-full bg-white/20 border border-white/30"
+                          className="text-xs font-times-new-roman px-3 py-1 rounded-full bg-white/20 border border-white/30"
                         >
                           {t}
-                        </span>
+                        </p>
                       ))}
                     </div>
 
