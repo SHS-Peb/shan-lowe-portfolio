@@ -72,7 +72,7 @@ export default function Contact() {
 
               {/* LinkedIn */}
               <motion.a
-                href="https://www.linkedin.com/in/YOUR-LINKEDIN"
+                href="https://www.linkedin.com/in/shannon-a-lowe/"
                 target="_blank"
                 rel="noreferrer"
                 initial={{ opacity: 0, x: -30 }}
@@ -130,21 +130,21 @@ export default function Contact() {
 
                 <div className="flex gap-4">
                   <a
-                    href="https://www.tiktok.com/@YOUR-TECH-ACCOUNT"
+                    href="https://www.tiktok.com/@techtalkinpink"
                     target="_blank"
                     rel="noreferrer"
                     className="bg-white/25 backdrop-blur-md border border-white/30 text-[#1f3b28] rounded-full px-6 py-2 text-sm font-semibold shadow-sm hover:bg-white/30 transition-colors"
                   >
                     Tech
                   </a>
-                  <a
+                  {/* <a
                     href="https://www.tiktok.com/@YOUR-WRITING-ACCOUNT"
                     target="_blank"
                     rel="noreferrer"
                     className="bg-white/25 backdrop-blur-md border border-white/30 text-[#1f3b28] rounded-full px-6 py-2 text-sm font-semibold shadow-sm hover:bg-white/30 transition-colors"
                   >
                     Writing
-                  </a>
+                  </a> */}
                 </div>
               </motion.div>
             </div>
