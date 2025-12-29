@@ -14,7 +14,7 @@ const projects = [
     title: "Firefly Mentoring",
     image: firefly,
     description:
-      "A mentoring website built with a soft glow aesthetic, featuring service packages, booking flow, and responsive design.",
+      "A client-driven React web application built to support a real mentoring service, featuring structured planning, responsive UI, and secure online payments.",
     tech: ["React", "Vite", "Tailwind", "JavaScript"],
     link: "https://fireflymentoring.com",
   },
@@ -38,15 +38,15 @@ const projects = [
     title: "Gratify Me",
     image: gratify,
     description:
-      "A gratitude and self-reflection app that encourages positive habits through daily entries and simple, calming interactions.",
-    tech: ["JavaScript", "HTML", "CSS", "Local Storage"],
+      "A lightweight desktop productivity application built with Electron that combines task management with a reward-based motivation system. Users can create and complete to-dos, earn rewards, and track achievements through a simple, focused interface.",
+    tech: ["JavaScript", "HTML", "CSS", "Local Storage", "Electron.js", "Node.js"],
     link: "https://github.com/SHS-Peb/gratify-me",
   },
   {
     title: "NavigateUrWeek",
     image: navigate,
     description:
-      "A weekly planning and organisation app that helps users structure tasks, priorities, and routines for a balanced and productive week.",
+      "Built using the Mapbox API and a weather API, it allows users to explore recommended locations, view weekly forecasts, and generate routes with a five-day weather outlook for their chosen destination.",
     tech: ["JavaScript", "HTML", "CSS", "Local Storage"],
     link: "https://github.com/SHS-Peb/NavigateUrWeek",
   },
