@@ -38,7 +38,7 @@ const projects = [
     title: "Gratify Me",
     image: gratify,
     description:
-      "A lightweight desktop productivity application built with Electron that combines task management with a reward-based motivation system. Users can create and complete to-dos, earn rewards, and track achievements through a simple, focused interface.",
+      "A desktop application built with Electron that combines task management with a reward-based motivation system. Users can create and complete to-dos, earn rewards, and track achievements.",
     tech: ["JavaScript", "HTML", "CSS", "Local Storage", "Electron.js", "Node.js"],
     link: "https://github.com/SHS-Peb/gratify-me",
   },
@@ -46,7 +46,7 @@ const projects = [
     title: "NavigateUrWeek",
     image: navigate,
     description:
-      "Built using the Mapbox API and a weather API, it allows users to explore recommended locations, view weekly forecasts, and generate routes with a five-day weather outlook for their chosen destination.",
+      "Built using the Mapbox API and a weather API, allows users to explore recommended locations, weekly forecasts, and generate routes with a five-day weather outlook for their destination.",
     tech: ["JavaScript", "HTML", "CSS", "Local Storage"],
     link: "https://github.com/SHS-Peb/NavigateUrWeek",
   },
