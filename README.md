@@ -83,6 +83,9 @@ Working through these issues improved my ability to:
 
 ## Screenshots
 
+### Figma Idea
+![Figma Screenshot](./src/assets/imgs/screenshots/idea.PNG)
+
 ### Homepage
 ![Homepage Screenshot](./src/assets/imgs/screenshots/home.PNG)
 
