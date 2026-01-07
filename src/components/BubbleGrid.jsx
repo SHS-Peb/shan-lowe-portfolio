@@ -84,14 +84,20 @@ export default function BubbleGrid() {
                     </motion.div>
                   </Link>
 
-                  <Link to="/code-developer#spotlight">
-                    <motion.div
-                      whileHover={{ scale: 1.06 }}
-                      className={`${smallBubbleBase} bg-[#f2f4ff]/70 text-[#558cdd] ${smallText}`}
-                    >
-                      <span className="font-perandory">
-                        <span className="font-amoresa">S</span>potlight
-                      </span>
+                  <Link to="/code-developer#spotlight" className="block">
+                    <motion.div className="relative inline-block">
+                      {/* Invisible hover buffer (bigger on small screens) */}
+                      <span className="absolute rounded-full -inset-5 sm:-inset-4 lg:-inset-3" />
+
+                      <motion.div
+                        whileHover={{ scale: 1.06 }}
+                        transition={{ type: "spring", stiffness: 220, damping: 16 }}
+                        className={`${smallBubbleBase} bg-[#f2f4ff]/70 text-[#558cdd] ${smallText} relative`}
+                      >
+                        <span className="font-perandory">
+                          <span className="font-amoresa">S</span>potlight
+                        </span>
+                      </motion.div>
                     </motion.div>
                   </Link>
                 </motion.div>
@@ -122,7 +128,7 @@ export default function BubbleGrid() {
 }
 
 
-      {/* Creative (splits into 3)
+{/* Creative (splits into 3)
       <motion.div
         onHoverStart={() => setCreativeOpen(true)}
         onHoverEnd={() => setCreativeOpen(false)}
