@@ -87,6 +87,12 @@ export default function Navbar() {
         >
           Advocacy
         </NavLink>
+        <NavLink
+          to="/acting"
+          className={`${base} bg-[var(--clr-creative)] hover:brightness-110`}
+        >
+          Acting
+        </NavLink>
 
         {/* Contact Me */}
         <NavLink
@@ -208,6 +214,14 @@ export default function Navbar() {
                   className={`${base} bg-[var(--clr-advocacy)] hover:brightness-110 text-center`}
                 >
                   Advocacy
+                </NavLink>
+
+                <NavLink
+                  to="/acting"
+                  onClick={closeMobile}
+                  className={`${base} bg-[var(--clr-creative)] hover:brightness-110 text-center`}
+                >
+                  Acting
                 </NavLink>
 
                 <NavLink

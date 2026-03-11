@@ -5,10 +5,7 @@ import { Link } from "react-router-dom";
 export default function BubbleGrid() {
   const [techOpen, setTechOpen] = useState(false);
 
-  // Responsive sizes
-  // Big bubbles scale from ~160px up to 256px
   const bubbleSize = "w-[clamp(160px,42vw,256px)] h-[clamp(160px,42vw,256px)]";
-  // Small bubbles scale from ~84px up to 112px
   const smallBubbleSize = "w-[clamp(84px,20vw,112px)] h-[clamp(84px,20vw,112px)]";
 
   const bigBubbleBase =
@@ -16,11 +13,9 @@ export default function BubbleGrid() {
   const smallBubbleBase =
     `${smallBubbleSize} rounded-full backdrop-blur-md shadow-md flex items-center justify-center text-center`;
 
-  // Text scales
   const bigText = "text-[clamp(18px,4.5vw,40px)]";
   const smallText = "text-[clamp(12px,2.8vw,18px)]";
 
-  // Only allows hover-split on md+ screens (prevents mobile weirdness)
   const hoverHandlers = {
     onHoverStart: () => setTechOpen(true),
     onHoverEnd: () => setTechOpen(false),
@@ -28,7 +23,6 @@ export default function BubbleGrid() {
 
   return (
     <div className="mx-auto w-full max-w-3xl px-4">
-      {/* 2 cols always, but responsive spacing */}
       <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:gap-x-12 sm:gap-y-12 place-items-center">
         {/* Advocacy */}
         <Link to="/advocacy">
@@ -42,7 +36,7 @@ export default function BubbleGrid() {
           </motion.div>
         </Link>
 
-        {/* Tech (splits on hover on desktop only) */}
+        {/* Tech */}
         <motion.div
           className="relative flex items-center justify-center"
           {...(typeof window !== "undefined" && window.innerWidth >= 768 ? hoverHandlers : {})}
@@ -63,7 +57,6 @@ export default function BubbleGrid() {
             </motion.div>
           </Link>
 
-          {/* Split bubbles: show only on md+ */}
           <div className="hidden md:block">
             <AnimatePresence>
               {techOpen && (
@@ -86,9 +79,7 @@ export default function BubbleGrid() {
 
                   <Link to="/code-developer#spotlight" className="block">
                     <motion.div className="relative inline-block">
-                      {/* Invisible hover buffer (bigger on small screens) */}
                       <span className="absolute rounded-full -inset-5 sm:-inset-4 lg:-inset-3" />
-
                       <motion.div
                         whileHover={{ scale: 1.06 }}
                         transition={{ type: "spring", stiffness: 220, damping: 16 }}
@@ -106,8 +97,25 @@ export default function BubbleGrid() {
           </div>
         </motion.div>
 
+        {/* Acting */}
+        <Link to="/acting">
+          <motion.div
+            whileHover={{ scale: 1.06 }}
+            className={`${bigBubbleBase} bg-[#efdbff]/70 text-[#72409b] ${bigText}`}
+          >
+            <div className="flex flex-col leading-tight">
+                <span className="font-perandory">
+                  <span className="font-amoresa">M</span>odeling &
+                </span>
+                <span className="font-perandory">
+                  <span className="font-amoresa">A</span>cting
+                </span>
+              </div>
+          </motion.div>
+        </Link>
+
         {/* Contact */}
-        <Link to="/contact" className="col-span-2 flex justify-center">
+        <Link to="/contact">
           <motion.div
             whileHover={{ scale: 1.06 }}
             className={`${bigBubbleBase} bg-[#c7edd7]/70 text-[#248955] ${bigText}`}

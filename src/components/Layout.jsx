@@ -6,6 +6,7 @@ const bgByRoute = [
   { prefix: "/code-developer", bg: "page-bg-blue" },
   { prefix: "/advocacy", bg: "page-bg-pink" },
   { prefix: "/contact", bg: "page-bg-green" },
+  { prefix: "/acting", bg: "bg-[#6b5b50]" },
   { prefix: "/", bg: "bg-home-gradient" },
 ];
 
