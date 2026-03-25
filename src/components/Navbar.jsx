@@ -91,7 +91,7 @@ export default function Navbar() {
           to="/acting"
           className={`${base} bg-[var(--clr-creative)] hover:brightness-110`}
         >
-          Acting
+          Acting & Modelling
         </NavLink>
 
         {/* Contact Me */}
@@ -221,7 +221,7 @@ export default function Navbar() {
                   onClick={closeMobile}
                   className={`${base} bg-[var(--clr-creative)] hover:brightness-110 text-center`}
                 >
-                  Acting
+                  Acting & Modelling
                 </NavLink>
 
                 <NavLink
